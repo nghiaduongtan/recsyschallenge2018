@@ -33,6 +33,7 @@ trackid_trackuri = pd.read_csv('trackid_trackuri_counts.csv')
 track_id_uri_dict = trackid_trackuri.track_uri.to_dict()
 uri_id_dict = dict((k, v) for (v, k) in track_id_uri_dict.items())
 
+# Necessary files can be downloaded from OneDrive (see file 'db'). Put these files under the same directory with .py files.
 # All playlist in million playlist dataset have the title in common with 10,000 playlist challenge 
 with open('title_in_training.pkl', 'rb') as f:
     title_in_training = pickle.load(f)
