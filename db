@@ -1,3 +1,10 @@
 Link OneDrive to download necessary files to build our Recommender System. These files are put under the same directory with .py files.
 
 https://husteduvn-my.sharepoint.com/:f:/g/personal/nghia_duongtan_hust_edu_vn/EofCfilpk8BNpT_RBY90g_IBAACZFJbr3Zbj6OzzoHOCzQ?e=OCOax2
+
+Files in this folder:
+1. title_in_training.pkl (2.25 GB)
+2. trackid_trackuri_counts.csv (119 MB)
+3. Y_challenge_1_5_10_25_100track_pidnew_pid_trackid_rating.pkl (11 MB)
+4. Y_challenge_1_5_10_25_100track_pidnew_trackid_rating_csr.pkl (3 MB)
+5. Y_training_pid_trackid_new_rating_csr.pkl (757 MB)
