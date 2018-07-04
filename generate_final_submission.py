@@ -57,8 +57,8 @@ pid = Y_challenge_1_5_10_25_100track_pidnew_pid_trackid_rating.pid.drop_duplicat
 pid.index = range(pid.shape[0])
 
 recommend_list_final_ax.index = range(recommend_list_final_ax.shape[0])
-submission_1_5_10_25_100track = pd.concat([pid, recommend_list_final_ax], axis=1, ignore_index=True)
+recommendation_for_playlists_1_5_10_25_100_track = pd.concat([pid, recommend_list_final_ax], axis=1, ignore_index=True)
 
-submission_recommend_for_pid_0_track_using_title = pd.read_csv('recommend_pid_0track_using_title.csv', header=None)
-submission_recommend_for_challenge_set = pd.concat([submission_1_5_10_25_100track, submission_recommend_for_pid_0_track_using_title], axis=0, ignore_index=True)
-submission_recommend_for_challenge_set.to_csv('submission_for_challenge_set.csv', index=False, header=False)
+recommendation_for_playlists_0_track = pd.read_csv('recommendation_for_playlists_0_track.csv', header=None)
+recommendation_for_challenge_set = pd.concat([recommendation_for_playlists_1_5_10_25_100_track, recommendation_for_playlists_0_track], axis=0, ignore_index=True)
+recommendation_for_challenge_set.to_csv('recommendation_for_challenge_set.csv', index=False, header=False)
